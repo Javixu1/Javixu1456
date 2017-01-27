@@ -1,0 +1,16 @@
+.bordes{
+	-fx-background-color: #008080;
+}
+.youtube{
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color: #008080;
+}
+
+.fondo{
+	-fx-font-family: HipsterishFontNormal;
+	-fx-text-fill: #008080;
+}
+
+.colores{
+	-fx-text-fill: #555555
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.MyControl">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="614.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="82.0" prefWidth="600.0" styleClass="bordes" stylesheets="@styling.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" layoutX="218.0" layoutY="12.0" prefHeight="27.0" prefWidth="243.0" style="-fx-text-fill: white;" text="FORMULARIO DE REGISTRO" textAlignment="CENTER" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="218.0" AnchorPane.topAnchor="12.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="57.0" fitWidth="59.0" layoutX="34.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="24.0">
+                     <image>
+                        <Image url="@images/github_white%20-%20copia.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="89.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="511.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Nombre">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField prefHeight="26.0" prefWidth="298.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin></TextField>
+                  <Label text="Email" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin></TextField>
+                  <Label text="Password" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <PasswordField GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin></PasswordField>
+                  <ImageView fitHeight="54.0" fitWidth="48.0" onMouseClicked="#cerrar" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" right="20.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="@images/cerrar.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="46.0" prefWidth="592.0" styleClass="bordes" stylesheets="@styling.css" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
